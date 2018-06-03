@@ -5,7 +5,7 @@ npm install uuid [UUID](https://www.npmjs.com/package/uuid)
 [Font Awesome 5](https://fontawesome.com/get-started)  
   
 ### Version 1
-[!alt text]()
+![alt text](https://github.com/abenjamin1313/react-practice-app/blob/master/pics/version-1.png)
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
