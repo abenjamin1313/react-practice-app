@@ -1,0 +1,34 @@
+// https://jsoneditoronline.org/ 
+
+{
+    "jordan one": {
+        "brand_name": "Jordan 1",
+        "brand_style": "Retro High Homage To Home",
+        "brand_size": "size 8",
+        "upc_id": "AJ1H-H2HNN"
+    },
+    "jordan two": {
+        "brand_name": "Jordan 1",
+        "brand_style": "Retro High Off_white University Blue",
+        "brand_size": "size 11.5",
+        "upc_id": "AJ1H-OFFWHTUNIBLU"
+    },
+    "jordan three": {
+        "brand_name": "Jordan 11",
+        "brand_style": "Retro High Retro Cap and Gown",
+        "brand_size": "size 10.5",
+        "upc_id": "AJ11-CPNDGWN"
+    },
+    "jordan four": {
+        "brand_name": "Jordan XXXII",
+        "brand_style": "Low Last Shot",
+        "brand_size": "size --",
+        "upc_id": "AJ32L-LSTSHT"
+    },
+    "jordan five": {
+        "brand_name": "Jordan Zoom",
+        "brand_style": "Tenacity 88 Pre Classic",
+        "brand_size": "size --",
+        "upc_id": "TNCTY88-PRECL"
+    }
+}
