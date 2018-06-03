@@ -6,6 +6,7 @@ import './App.css'; // component styling
 import Header from './components/Header';
 import Info from './components/Info';
 import Footer from './components/Footer';
+import Shoes from './components/Shoes';
 
 class App extends Component {
   
@@ -31,17 +32,18 @@ class App extends Component {
 
   render() {
     return (
-        <div className="container">
+        <div className="fluid-container">
           <Header />
           <div className="row">
-            <div className="col-md-6">
-              <div><strong>Brand Name:</strong> {this.state.brand_name}</div>
-              <div><strong>Brand Style:</strong> {this.state.brand_style}</div>
-              <div><strong>Brand Size:</strong> {this.state.brand_size}</div>
-              <div><strong>UPC ID:</strong> {this.state.upc_id}</div>
-              <div onClick={this.onClick}>CLick Here</div>
+            <div className="col-md-9">
+              <Shoes 
+                name={this.state.brand_name}
+                style={this.state.brand_style}
+                size={this.state.brand_size}
+                upcid={this.state.upc_id}
+              />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-3">
                 <Info />
             </div>
           </div>
