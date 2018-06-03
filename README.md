@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).  
   
-npm install uuid [UUID](https://www.npmjs.com/package/uuid)  
-[Bootstrap 3](https://getbootstrap.com/docs/3.3/components/#navbar-static-top)  
-[Font Awesome 5](https://fontawesome.com/get-started)  
+npm install uuid [UUID](https://www.npmjs.com/package/uuid) for random generated numbers for ID.  
+Using [Bootstrap 3](https://getbootstrap.com/docs/3.3/components/#navbar-static-top) for quick CSS layout.  
+Using [Font Awesome 5](https://fontawesome.com/get-started) for Icons.    
   
 ### Version 1
 ![alt text](https://github.com/abenjamin1313/react-practice-app/blob/master/pics/version-1.png)
