@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import uuid from 'uuid'; // random number generator
 
 import './App.css'; // component styling
+// Components
 import Header from './components/Header';
+import Info from './components/Info';
+import Footer from './components/Footer';
 
 class App extends Component {
   
@@ -17,9 +20,15 @@ class App extends Component {
     }
 
     // component binding
-
+    this.onClick = this.onClick.bind(this);
   }
    
+  onClick() {
+    this.setState({
+
+    });
+  }
+
   render() {
     return (
         <div className="container">
@@ -30,14 +39,13 @@ class App extends Component {
               <div><strong>Brand Style:</strong> {this.state.brand_style}</div>
               <div><strong>Brand Size:</strong> {this.state.brand_size}</div>
               <div><strong>UPC ID:</strong> {this.state.upc_id}</div>
-              <input onChange={this.onChange} />
+              <div onClick={this.onClick}>CLick Here</div>
             </div>
             <div className="col-md-6">
-                <p>Using <strong>Bootstrap 3</strong> for quick CSS layout</p>
-                <p>Using the <strong>UUID</strong> to generate random number for upc_id</p>
-                <p>Using <strong>fontawesome</strong> for icons</p>
+                <Info />
             </div>
           </div>
+          <Footer />
         </div>
     );
   }
