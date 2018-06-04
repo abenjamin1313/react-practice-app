@@ -16,7 +16,7 @@ class App extends Component {
     this.state = {
       brand_name: 'Jordan 1',
       brand_style: 'Retro High Homage To Home',
-      brand_size: 'Size 8',
+      brand_size: 8,
       upc_id:uuid.v4()
     }
 
@@ -26,7 +26,7 @@ class App extends Component {
    
   onClick() {
     this.setState({
-
+      brand_name: 'New Brand Name'
     });
   }
 
@@ -41,6 +41,7 @@ class App extends Component {
                 style={this.state.brand_style}
                 size={this.state.brand_size}
                 upcid={this.state.upc_id}
+                onClick={this.onClick}
               />
             </div>
             <div className="col-md-3">
