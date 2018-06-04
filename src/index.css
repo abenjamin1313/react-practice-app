@@ -4,3 +4,6 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+ hr {
+   border: solid 1px grey;
+ }

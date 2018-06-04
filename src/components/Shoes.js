@@ -9,6 +9,13 @@ const propTypes = {
     onClick: PropTypes.func
 };
 
+const defaultProps = {
+    name: 'Brand Name',
+    style: 'Brand Style',
+    size: 'Brand Size',
+    upcid: '000000'
+}
+
 class Shoes extends Component {
     render() {
         const {name, style, size, upcid, onClick } = this.props;
@@ -26,7 +33,7 @@ class Shoes extends Component {
                 </thead>
                 <tbody>
                   <tr>
-                    <td onClick={onClick}><i className="far fa-trash-alt"></i></td>
+                    <td onClick={onClick}><i className="far fa-trash-alt">Click</i></td>
                     <td>{upcid}</td>
                     <td>{name}</td>
                     <td>{style}</td>
@@ -39,5 +46,6 @@ class Shoes extends Component {
 }
 
 Shoes.propTypes = propTypes;
+Shoes.defaultProps = defaultProps;
 
 export default Shoes; 
