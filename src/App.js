@@ -10,30 +10,31 @@ import Shoes from './components/Shoes';
 import Form from './components/Form';
 
 class App extends Component {
-  
-  componentWillMount() {
-    //console.log('Will MOunt');
-  }
 
   componentDidMount() {
-    //console.log('Did Mount');
+ 
   }
-
 
   constructor(props) {
     super(props);
     // define state
     this.state = {
-      name: 'Initial Brand Name',
-      style: 'Initial Brand Style',
-      size: 0,
-      upcid:'default id'
+      shoes: []
     }
 
     // component binding
     this.onClick = this.onClick.bind(this);
   }
    
+  loadShoes() {
+    fetch('data/shoes.json')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({data: data })
+      })
+      .catch(err => console.error(this.props.url, err.toString()))
+  }
+
   onClick() {
     this.setState({
       name: 'New Brand Name',
@@ -54,7 +55,7 @@ class App extends Component {
                 style={this.state.style}
                 size={this.state.size}
                 upcid={this.state.upcid}
-                onClick={this.onClick}
+                onClick={uuid.v4()}
               />
             </div>
             <div className="col-md-3">
